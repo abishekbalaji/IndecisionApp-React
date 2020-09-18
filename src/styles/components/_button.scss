@@ -1,0 +1,38 @@
+.big-button {
+  width: 100%;
+  border: none;
+  border-bottom: 0.6rem solid darken($purple, 10%);
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  background-color: $purple;
+  color: white;
+  font-size: $l-size;
+  font-weight: bold;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+.button {
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, 10%);
+  background-color: $purple;
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+}
+
+// in BEM this is M - Modifier - this modifies the above class
+.button--link {
+  border: none;
+  background: none;
+  color: $off-white;
+  padding: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
